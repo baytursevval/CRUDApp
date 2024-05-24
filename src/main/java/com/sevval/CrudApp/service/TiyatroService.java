@@ -7,6 +7,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 @RequiredArgsConstructor
@@ -27,6 +28,25 @@ public class TiyatroService {
             throw new EntityNotFoundException(id + " ID nolu oyun bulunamadı");
         }
         tiyatroRepository.deleteById(id);
+    }
+
+    public Tiyatro getTiyatroById(Long id){
+        return tiyatroRepository.findById(id).orElse(null);
+    }
+
+    public Tiyatro updateTiyatro(Long id, Tiyatro tiyatro){
+        Optional<Tiyatro> optionalTiyatro= tiyatroRepository.findById(id);
+        if(optionalTiyatro.isPresent()){
+            Tiyatro existingTiyatro= optionalTiyatro.get();
+
+            existingTiyatro.setTitle(tiyatro.getTitle());
+            existingTiyatro.setActor(tiyatro.getActor());
+            existingTiyatro.setDescription(tiyatro.getDescription());
+            existingTiyatro.setTime(tiyatro.getTime());
+
+            return tiyatroRepository.save(existingTiyatro);
+        }
+        return null;
     }
 
 
