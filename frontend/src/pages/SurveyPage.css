@@ -1,0 +1,28 @@
+/* src/components/SurveyPage.css */
+.survey-container {
+    text-align: center;
+    position: relative;
+    max-width: 900px;
+    /* Maksimum genişlik */
+    margin: 0 auto;
+    /* Ortalamak için */
+    padding: 20px;
+    /* İç kenar boşlukları */
+    border: 1px solid #ddd;
+    /* Kenarlık */
+    border-radius: 8px;
+    /* Köşeleri yuvarlama */
+    background-color: #f9f9f9;
+    /* Arka plan rengi */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Gölge efekti */
+}
+
+.button-group {
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    /* Butonlar arasındaki boşluk */
+}

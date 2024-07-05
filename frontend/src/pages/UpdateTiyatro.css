@@ -1,0 +1,30 @@
+.center-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+}
+
+.center-form Form {
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #CCC;
+    background-color: aliceblue;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.center-form Form .form-control {
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.fixed-bottom-left {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1000;
+}

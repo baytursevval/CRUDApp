@@ -1,0 +1,60 @@
+/* src/components/MatryoshkaPage.css */
+.matryoshka-container {
+    text-align: center;
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.matryoshka {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #ffcc00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    transition: transform 0.5s ease;
+}
+
+.matryoshka-1 {
+    transform: scale(1);
+}
+
+.matryoshka-2 {
+    transform: scale(0.75);
+}
+
+
+.matryoshka p {
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+}
+
+.final-step {
+    margin-top: 20px;
+}
+
+.button-group {
+    margin-top: 20px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gift-icon {
+    color: rgb(201, 44, 44);
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: 20px;
+}

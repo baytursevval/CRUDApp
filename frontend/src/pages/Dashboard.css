@@ -1,0 +1,18 @@
+.custom-pagination-item {
+    color: #232221;
+}
+
+.custom-pagination-item.active .page-link {
+    background-color: #0b0a0a;
+    border-color: #0c0c0c;
+}
+
+.table {
+    font-family: 'Arial', sans-serif;
+}
+
+.table th,
+.table td {
+    font-size: 16px;
+    vertical-align: middle;
+}

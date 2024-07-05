@@ -1,0 +1,39 @@
+.custom-navbar {
+    background-color: rgb(74, 76, 75);
+}
+
+.custom-navbar .navbar-brand {
+    color: rgb(60, 59, 59);
+    font-weight: bold;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+.custom-navbar .navbar-brand svg {
+    margin-right: 10px;
+}
+
+.custom-navbar .nav-link {
+    color: rgb(61, 63, 62) !important;
+    text-decoration: none !important;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+.custom-navbar .nav-link:hover {
+    color: rgb(200, 200, 255) !important;
+}
+
+.NoMatch-text {
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 50px;
+}
